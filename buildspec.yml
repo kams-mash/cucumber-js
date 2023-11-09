@@ -4,9 +4,9 @@ phases:
 
   install:
     commands:
-+     # Added commands
-+     - curl -sL https://rpm.nodesource.com/setup_lts.x | bash -
-+     - yum install -y nodejs
+      # Added commands  
+      - curl -sL https://rpm.nodesource.com/setup_lts.x | bash -
+      - yum install -y nodejs
       
       # Original install command
       - npm install
@@ -15,10 +15,10 @@ phases:
     commands:
       - npm run lint
 
-  build:  
+  build:
     commands:
      - npm run build
 
   post_build:
-    commands:
+    commands:  
       - npm test
